@@ -1,0 +1,145 @@
+html {
+    width: fit-content;
+}
+
+
+.navLabels {
+    display: inline-block;
+    list-style: none;
+    
+}
+
+
+.auto1 {
+background-color: white;
+   height: 6rem;
+   /* navbar drop shadow */
+   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.03);
+   padding-top: 4rem;
+   padding-left: 5.94rem;
+    
+}
+
+body {
+    font-family: non-seasonal geo;
+    font-size: 1.375rem;
+    padding: 0;
+    margin: 0;
+    
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.logo {
+    display: inline-flex;
+    font-size: 3.75rem;
+    padding-right: 28rem;
+   
+}
+
+.image {
+    justify-content: left;
+    align-items: center;
+}
+.auto2 {
+    display: inline-block;
+}
+.label {
+    display: inline-block;
+    padding: 9.88rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 1.56rem;
+    padding-bottom: 0.69rem;
+}
+
+.aboutMe {
+    width: 49.5rem;
+    padding-left: 13.5rem;
+    padding-top: 4rem;
+}
+
+.aboutDescr {
+    display: flex;
+    width: 34rem;
+    padding-top: 2rem;
+    padding-left: 20.75rem;
+    padding-right: 4rem;
+}
+
+.aboutImg {
+    display: inline-block;
+    background-color: lightgray;
+    width: 42.25rem;
+    height: 41.5625rem;
+    
+ 
+}
+
+.aboutLayout {
+    display: inline-block;
+    justify-content: space-between 8.5rem;
+   
+}
+
+.socialIcons {
+    display: inline-block;
+    
+}
+
+.soc {
+    display: inline-block;
+    padding: 0rem .5rem;
+    
+}
+
+.connect {
+    width: 100%;
+    background-color: #1E3D62;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: .5rem;
+   
+}
+
+.email {
+    font-size: 2rem;
+}
+
+.emailIcon {
+    scale: 60%
+   
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline-block;
+    justify-content: start;
+    padding: 4rem 8rem;
+    
+}
+
+footer li {
+    padding: .5rem;
+}
+
+.footerLogo {
+    padding-top: 2rem;
+}
+
+footer {
+    background-color: #1E3D62;
+    color: white;
+}
