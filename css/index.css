@@ -1,6 +1,4 @@
-html {
-    width: fit-content;
-}
+
 
 
 .navLabels {
@@ -22,7 +20,7 @@ background-color: white;
 
 body {
     font-family: non-seasonal geo;
-    font-size: 1.375rem;
+    font-size: 1.15rem;
     padding: 0;
     margin: 0;
     
@@ -35,7 +33,7 @@ h1 {
 .logo {
     display: inline-flex;
     font-size: 3.75rem;
-    padding-right: 28rem;
+    padding-right: 24rem;
    
 }
 
@@ -119,6 +117,9 @@ h1 {
     grid-template-columns: "RescueRiders Fora blank";
 }
 
+
+/* My Skills START */
+
 .mySkills {
     width: 49.5rem;
     padding-left: 13.5rem;
@@ -126,9 +127,30 @@ h1 {
    
 }
 
+.skill1 {
+    background-color: lightblue;
+    flex-basis: 50rem;
+    padding: 3rem;
+}
+
+.skill2 {
+    background-color: pink;
+    flex-basis: 50rem;
+    padding: 3rem;
+
+}
+
+.skill3 {
+    background-color: pink;
+    flex-basis: 50rem;
+    padding: 3rem;
+}
+
+
 .flexContainer {
     display: flex;
-    justify-content: center;
+    margin-bottom: 4rem;
+    
    
 }
 
@@ -139,25 +161,28 @@ h1 {
 }
 
 .aboutDescr {
-    display: flex;
-    width: 34rem;
-    padding-top: 2rem;
-    padding-left: 20.75rem;
+    flex: 1;
     padding-right: 4rem;
+    padding-left: 20.75rem;
 }
 
 .aboutImg {
-    display: inline-block;
+    flex: 1;
+    position: right;
     background-color: lightgray;
-    width: 42.25rem;
-    height: 41.5625rem;
+    max-width: 30rem;
+    height: 28rem;
+    padding-right: .7rem;
     
  
 }
 
 .aboutLayout {
-    display: inline-block;
-    justify-content: space-between 8.5rem;
+    display: flex;
+    align-items: top;
+    padding: 20px;
+    width: 93rem;
+    
    
 }
 
@@ -235,10 +260,9 @@ footer {
 
 
 
-/* Media Queries */
-
+/* Media Queries
 @media only screen and (max-width: 600){
-    /* DESKTOP */
+     DESKTOP 
     #categoryGrid {
         margin: 0px 5%;
         display: grid;
@@ -250,7 +274,7 @@ footer {
         "blank blank blank"
         ;
     }
-    /*  MOBILE */
+    /*  MOBILE
     #categoryGrid {
         grid-template-rows: 300px 300px 300px 300px 300px;
         grid-template: 1fr;
@@ -267,4 +291,4 @@ footer {
     }
 }
 
-/* ^ Media Queries (above) ^ */
+^ Media Queries (above) ^ */
