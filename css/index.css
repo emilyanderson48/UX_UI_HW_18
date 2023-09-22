@@ -30,6 +30,17 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    padding-left: 13.5rem;
+    padding-top: 4rem;
+    font-size: 2.5rem;
+}
+
+
+h4 {
+    font-size: 2rem;
+
+}
 .logo {
     display: inline-flex;
     font-size: 3.75rem;
@@ -60,69 +71,81 @@ h1 {
     padding-top: 4rem;
 }
 
-.rrMain {
-    z-index: 100;
-    width: 16.6875rem;
-    height: 27.0625rem;
-    
-    
+
+/* Work START*/
+
+
+.workGrid {
+    display: grid;
+    padding-top: 4rem;
 }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+
 .rrContainer {
-    background-color: white;
-    width: 35rem;
+    position: relative;
+    background-color: skyblue;
+    max-width: 100%;
     height: 29.5625rem;
-    
-    
-}
-.foraMain {
-    z-index: 100;
-    width: 21.0625rem;
-    height: 28.3125rem;
     
 }
 
 .foraContainer {
+    position: relative;
     background-color: #89A9F1;
-    width: 35rem;
+    max-width: 100%;
     height: 29.5625rem;
     
+}
+
+.blankContainer {
+    position: relative;
+    background-color: pink;
+    max-width: 100%;
+    height: 29.5625rem;
     
 }
-.work {
-    width: 49.5rem;
-    padding-left: 13.5rem;
-    padding-top: 4rem;
+/* this is positioning the project image to the right side of the card. still needs to be tweaked visually but this is a starting point */
+.projectImg {
+    height: 28.3125rem;
+    position: absolute;
+    right: .60rem;    
 }
 
-.workGrid {
-    display: grid;
-    padding-left: 13.5rem;
-    padding-top: 4rem;
+/* this is the <h4> in each work card */
+
+.projectTitle {
+    position: absolute; /* this is only working because parent has 'position: relative' */
+    bottom: 8rem; /* think of as '8 rem from the bottom' */
+    left: 4rem;
+    padding: 5px;
+    margin: 0;
 }
 
-.item1 {
-    grid-area: ResueRiders;
+/*t this is the <p> element holding a description of the project. this goes under the <h4> */
+.projectDescr {
+    position: absolute; /* this is only working because parent has 'position: relative' */
+    bottom: 6rem; /* think of as '8 rem from the bottom' */
+    left: 4rem;
+    padding: 5px;
+    margin: 0;
+
 }
 
-.item2 {
-    grid-area: Fora;
-}
 
-.item3 {
-    grid-area: blank;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: "RescueRiders Fora blank";
-}
+/* Work END*/
 
 
 /* My Skills START */
 
 .mySkills {
-    width: 49.5rem;
-    padding-left: 13.5rem;
+    justify-content: center;
     padding-top: 4rem;
    
 }
@@ -155,9 +178,7 @@ h1 {
 }
 
 .flexContainer div {
-    width: 33%;
-   
-
+    width: 100%;
 }
 
 .aboutDescr {
@@ -181,9 +202,6 @@ h1 {
     display: flex;
     align-items: top;
     padding: 20px;
-    width: 93rem;
-    
-   
 }
 
 
@@ -260,9 +278,9 @@ footer {
 
 
 
-/* Media Queries
+/* Media Queries */
 @media only screen and (max-width: 600){
-     DESKTOP 
+     /* DESKTOP 
     #categoryGrid {
         margin: 0px 5%;
         display: grid;
@@ -274,7 +292,12 @@ footer {
         "blank blank blank"
         ;
     }
-    /*  MOBILE
+
+    */
+
+    /*  MOBILE */
+   
+   
     #categoryGrid {
         grid-template-rows: 300px 300px 300px 300px 300px;
         grid-template: 1fr;
